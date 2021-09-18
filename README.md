@@ -1,6 +1,8 @@
-# Docker Compose for a full-stack lancache.
+# Docker Compose for a full-stack lancache for ARM processors.
 
-![Docker Pulls](https://img.shields.io/docker/pulls/lancachenet/monolithic?label=Monolithic) ![Docker Pulls](https://img.shields.io/docker/pulls/lancachenet/lancache-dns?label=Lancache-dns) ![Docker Pulls](https://img.shields.io/docker/pulls/lancachenet/sniproxy?label=Sniproxy) ![Docker Pulls](https://img.shields.io/docker/pulls/lancachenet/generic?label=Generic)
+![Docker Pulls](https://img.shields.io/docker/pulls/blakeder/monolithic?label=Monolithic) ![Docker Pulls](https://img.shields.io/docker/pulls/blakeder/lancache-dns?label=Lancache-dns) ![Docker Pulls](https://img.shields.io/docker/pulls/blakeder/generic?label=Generic)
+
+This is a forked version of the popular lancache, the only difference in this fork is that it is using docker containers that were built for ARM CPU architectures, I have tested this working on a Raspberry Pi4 2GB (not overclocked) with a USB 3 SATA SSD with a max throughput of around 300mbps, your results may vary depending on the SSD used and Raspberry Pi model used.
 
 This docker-compose is meant as an example for running our lancache stack, It will run out of the box with minimal changes to the `.env` file for your local IP address.
 
